@@ -1,0 +1,88 @@
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.board-game {
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 5fr 4fr;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    height: 60px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 60px;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+.chat-frame {
+    height: inherit;
+    background: #eeeeee;
+    border: 0px;
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+}
+
+.message-tag-left {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.message-tag-right {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.list-chat {
+    overflow: auto;
+}
+
+.text-box {
+    display: flex;
+    background-color: #dddddd;
+}
+
+.message-text-box {
+    flex-grow: 1;
+    border: 0px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.send-button {
+    height: 100%;
+    border: 0px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    color: #0000ff;
+    outline: none;
+}
+
+.container-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
